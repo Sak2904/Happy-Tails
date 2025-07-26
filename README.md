@@ -26,10 +26,10 @@ Manage pets, services, products, and adoption requests.
 Monitor and respond to user activity.
 
 Tech Stack -
-Frontend: React.js, HTML, CSS, Bootstrap/Tailwind
-Backend: Node.js, Express.js
-Database: MongoDB (petManagement)
-Authentication: JWT/Session-based login
-Payment: Razorpay/Stripe (or mock gateway)
+Frontend: React.js, HTML, CSS, Bootstrap/Tailwind, 
+Backend: Node.js, Express.js, 
+Database: MongoDB (petManagement), 
+Authentication: JWT/Session-based login, 
+Payment: Razorpay/Stripe (or mock gateway), 
 Version Control: Git & GitHub
 
