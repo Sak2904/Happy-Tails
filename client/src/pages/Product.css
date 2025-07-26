@@ -1,0 +1,333 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #5a3531;
+  padding: 10px 20px;
+  color: white;
+}
+
+/* Cart */
+.cart {
+  position: fixed;
+  top: 120px;
+  right: 12px;
+  background-color: #5a3531ba;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Cart Dropdown */
+.cart-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background: white;
+  color: black;
+  border: 1px solid #ccc;
+  width: 280px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 1100;
+
+  /* ✅ Scroll styles */
+  max-height: 300px;       /* Limit height */
+  overflow-y: auto;        /* Enable vertical scroll */
+  overflow-x: hidden; 
+  word-wrap: break-word;
+  scrollbar-width: thin;   /* Firefox */
+}
+
+/* ✅ Optional: Nice-looking scrollbars for WebKit browsers */
+.cart-dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cart-dropdown::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.cart:hover .cart-dropdown {
+  display: block;
+}
+
+.cart-dropdown ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-dropdown li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-dropdown img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.cart-dropdown button {
+  background: #5a3531;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.cart-dropdown button:hover {
+  background: #5a3531;
+}
+
+.cart-quantity {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cart-quantity input {
+  width: 50px; /* or try 50px for tighter spacing */
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.cart-items-container {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.buy-btn {
+  width: 50%;
+  background: #5a3531;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.buy-btn:hover {
+  background: #442421;
+}
+
+/* Product Page */
+.products-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.product-item {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 220px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.product-item:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.product-item img {
+  max-width: 100px;
+  border-radius: 5px;
+}
+
+.product-item button {
+  background: #5a3531;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-top: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.product-item button:hover {
+  background: #442421;
+}
+
+/* Payment Modal */
+.payment-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  backdrop-filter: blur(3px);
+}
+
+.payment-content {
+  background: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  width: 90%;  /* Adjusts width to fit within the screen */
+  max-width: 400px; /* Limits the modal size */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 0.3s ease-in-out;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+}
+
+/* Adjust heading size */
+.payment-content h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Make input fields more compact */
+.payment-content input {
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+/* Reduce spacing in form */
+.payment-content form {
+  gap: 1px;
+}
+
+/* Adjust button size */
+.payment-content button {
+  padding: 1px;
+  font-size: 14px;
+}
+
+/* Reduce size of radio buttons */
+.payment-content label {
+  font-size: 14px;
+}
+/* Customer Info Form */
+.customer-info {
+  margin-bottom: 5px;
+}
+
+.customer-info input {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.payment-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+/* Payment Inputs */
+.payment-content input {
+  padding: 5px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.payment-content input:focus {
+  border-color: #5a3531;
+}
+
+/* Payment Buttons */
+.payment-content button {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.payment-content button[type="submit"] {
+  background: #5a3531;
+  color: white;
+}
+
+.payment-content button[type="submit"]:hover {
+  background: #442421;
+}
+
+.payment-content button[type="button"] {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.payment-content button[type="button"]:hover {
+  background: #d0d0d0;
+}
+
+/* Confirmation Message */
+.confirmation-message {
+  background: #d4edda;
+  color: #155724;
+  padding: 12px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.confirmation-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #32653e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

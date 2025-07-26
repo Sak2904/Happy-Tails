@@ -1,0 +1,135 @@
+/* Flex container for the page */
+.pets-page {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Left panel for "Add Pet" form */
+.add-pet-container {
+  width: 270px;
+  background: #5a3531ba;
+  color: white;
+  padding: 20px 15px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-sizing: border-box; /* ✅ important */
+}
+
+/* Input field and select styles */
+.pet-textfield {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #c7c7c7;
+  color: black;
+  font-size: 14px;
+  outline: none;
+}
+
+.pet-textfield::placeholder {
+  color: #333;
+}
+
+/* Gender radio section */
+.gender-section-label {
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: -5px;
+  color: white;
+  font-size: 14px;
+}
+
+/* Improve radio layout */
+.gender-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #c7c7c7;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: black;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Smooth radio spacing */
+.gender-options label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+/* File upload input */
+input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  background: #555;
+  color: white;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Add Pet Button */
+.add-pet-container button {
+  background-color: #5a3531;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.add-pet-container button:hover {
+  background-color: #442421;
+}
+
+/* Right panel for pet listings */
+.pet-list-container {
+  flex: 1;
+}
+
+/* Pet listing container */
+.pet-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Individual pet card */
+.pet-card {
+  width: 200px;
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  transform: scale(1);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.pet-card:hover {
+  transform: scale(1.05);
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.pet-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}

@@ -1,0 +1,308 @@
+/* Admin Dashboard Layout */
+.admin-dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+  position: fixed;
+  width: 250px;
+  background-color: #d68e86;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  top: 94px;
+  bottom: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.sidebar li:hover,
+.sidebar .active {
+  background-color: #5a3531;
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+  margin-left: 290px;
+  overflow-y: auto;
+}
+/* Forms */
+.product-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 5px;
+  align-items: center;
+  background: #dcc7c7;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+}
+
+.product-form input,
+.product-form select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 180px;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+  background: #fefefe;
+}
+
+.product-form input:focus,
+.product-form select:focus {
+  outline: none;
+  border-color: #7b2f2b;
+  box-shadow: 0 0 4px rgba(123, 47, 43, 0.3);
+}
+
+.product-form input[type="file"] {
+  background: #eee;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: -2px;
+}
+
+.product-form button {
+  background: #5a3531;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-form button:hover {
+  background-color: #44231f;
+}
+/* Services Form Styling - Same as product-form for consistency */
+.service-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+  background: #dcc7c7;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+}
+
+.service-form input,
+.service-form select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 180px;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+  background: #fefefe;
+}
+
+.service-form input:focus,
+.service-form select:focus {
+  outline: none;
+  border-color: #7b2f2b;
+  box-shadow: 0 0 4px rgba(123, 47, 43, 0.3);
+}
+.service-form input[type="file"] {
+  background: #eee;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: -2px;
+}
+.service-form button {
+  background: #5a3531;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.service-form button:hover {
+  background-color: #44231f;
+}
+
+/* 
+/* Forms */
+/* .product-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.product-form input,
+.product-form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.product-form button {
+  background: #5a3531;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+} */
+
+/* Product List */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.product-item {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  width: 200px;
+}
+
+.product-item img {
+  max-width: 100px;
+  border-radius: 5px;
+}
+
+.product-item button {
+  background: #5a3531;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Adoption Requests Section */
+.adoption-requests-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* List format for adoption requests */
+.requests-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Adoption Request Card */
+.request-item {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.request-item h3 {
+  margin-bottom: 10px;
+}
+
+.request-item p {
+  margin: 5px 0;
+}
+
+/* Status Styling */
+.status {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status.approved {
+  color: green;
+}
+
+.status.rejected {
+  color: red;
+}
+
+/* Action Buttons */
+.actions {
+  margin-top: 10px;
+}
+
+.actions button {
+  margin-right: 10px;
+}
+
+/* Buttons */
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #5a3531; /* Maroon color for all buttons */
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Approve Button (Green) */
+button.approve {
+  background: #328f22 !important;
+  color: white;
+}
+
+/* Reject Button (Red) */
+button.reject {
+  background: #dc3545 !important;
+  color: white;
+}
+

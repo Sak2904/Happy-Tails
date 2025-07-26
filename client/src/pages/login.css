@@ -1,0 +1,145 @@
+body {
+  font-family: Garamond, serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5a3531;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.logo-img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.home-content {
+  text-decoration: none;
+  color: rgb(90, 19, 19);
+  font-weight: bold;
+  margin-top: 250px;
+}
+
+.pet-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pet-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pet-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+
+/* ✅ Centering Login & Register Containers */
+.login-container, .register-container {
+  margin-top: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* ✅ Form Styling */
+.login-container form, .register-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container input, .register-container input {
+  width: 95%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-container button, .register-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #5a3531;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-container button:hover, .register-container button:hover {
+  background-color: #432622;
+}
+
+/* ✅ Toggle Button */
+.toggle-btn {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  background-color: #5a3531;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background-color: #432622;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .login-container, .register-container {
+      width: 90%;
+      max-width: 280px;
+  }
+  
+  .auth-page {
+      background-size: cover;
+  }
+}

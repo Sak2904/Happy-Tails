@@ -1,0 +1,75 @@
+.homepage-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/images/wall4.png'); /* 👈 Make sure the image is in public/images */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain; /* 👈 Shows full image */
+    background-color: #fff;   /* Fallback background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-overlay {
+    display: none; /* You can remove or keep it if needed */
+  }
+  
+  .hero-content {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    padding-top: 4px;    
+    padding-bottom: 50px;    
+    
+    margin-bottom: 300px;
+    margin-left: 110px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .primary-btn,
+  .secondary-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .primary-btn {
+    background-color: brown;
+    color: #000;
+  }
+  
+  .primary-btn:hover {
+    background-color: brown;
+  }
+  
+  .secondary-btn {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+  }
+  
+  .secondary-btn:hover {
+    background-color: #f0f0f0;
+  }
+  
