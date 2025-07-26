@@ -33,3 +33,11 @@ Authentication: JWT/Session-based login,
 Payment: Razorpay/Stripe (or mock gateway), 
 Version Control: Git & GitHub
 
+Screenshots -
+<img width="1887" height="878" alt="Screenshot 2025-03-31 175455" src="https://github.com/user-attachments/assets/5df1cf22-7910-4e13-ade2-4a062af9391f" />
+<img width="1885" height="866" alt="Screenshot 2025-03-31 175509" src="https://github.com/user-attachments/assets/9cbd1752-459b-4f1c-8c6d-75ca47ba2889" />
+<img width="1905" height="869" alt="Screenshot 2025-03-31 175525" src="https://github.com/user-attachments/assets/66be2b47-21df-421a-867c-8b84cf8cdc83" />
+<img width="1916" height="865" alt="Screenshot 2025-03-31 175626" src="https://github.com/user-attachments/assets/6a052b41-ec38-4b95-bd52-00fb07f4c0e3" />
+<img width="1878" height="873" alt="Screenshot 2025-03-31 180052" src="https://github.com/user-attachments/assets/70bb1ea-8f2f-49c9-bde4-f1b6fe2d4f27" />
+<img width="1889" height="870" alt="Screenshot 2025-04-02 174506" src="https://github.com/user-attachments/assets/bbb5dce7-08c6-4af5-a0d7-db7c8c73ea51" />
+<img width="1864" height="864" alt="Screenshot 2025-04-04 215900" src="https://github.com/user-attachments/assets/e116ee52-a71f-4842-ad7f-e2884c1d7a75" />
