@@ -1,0 +1,8 @@
+# Common ignores for Node.js or web projects
+node_modules/
+dist/
+build/
+.env
+.DS_Store
+.vscode/
+*.log
